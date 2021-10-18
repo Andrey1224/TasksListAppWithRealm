@@ -54,6 +54,7 @@
                                 <connections>
                                     <outlet property="myImage" destination="a5I-2p-Gvv" id="6at-ga-Nfg"/>
                                     <outlet property="myLabel" destination="YvD-Wd-GTy" id="1Up-7G-EhH"/>
+                                    <segue destination="qnS-Ud-okq" kind="show" identifier="showDetail" id="Ba0-gq-rhx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,7 +63,7 @@
                             <outlet property="delegate" destination="mMj-qK-mlH" id="hmt-aC-xp3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tasks" id="Gx6-Iy-Ber">
+                    <navigationItem key="navigationItem" title="Tasks" largeTitleDisplayMode="never" id="Gx6-Iy-Ber">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="TAN-ji-6VX">
                             <connections>
                                 <segue destination="zx5-6n-8ta" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="tMk-6Z-ibA"/>
@@ -73,7 +74,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXR-jn-Ke0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597.10144927536237" y="40.848214285714285"/>
+            <point key="canvasLocation" x="1593" y="41"/>
         </scene>
         <!--NewTask-->
         <scene sceneID="Wmh-UP-mrb">
@@ -146,7 +147,7 @@
                             <outlet property="delegate" destination="qnS-Ud-okq" id="z72-Hj-UB1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="NewTask" id="44I-Qa-gGP">
+                    <navigationItem key="navigationItem" title="NewTask" largeTitleDisplayMode="always" id="44I-Qa-gGP">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nJk-C5-rwM">
                             <connections>
                                 <action selector="cancelAction:" destination="qnS-Ud-okq" id="TD8-v6-MI1"/>
@@ -174,8 +175,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fwB-KK-F7H" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FDJ-5w-c2j">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="FDJ-5w-c2j">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -185,7 +186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLc-he-2vN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="41"/>
+            <point key="canvasLocation" x="812" y="41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="En5-Yi-fEg">
@@ -204,9 +205,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqr-8f-VjI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="40.848214285714285"/>
+            <point key="canvasLocation" x="2355" y="-674"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ba0-gq-rhx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="addImage" width="66.5" height="66.5"/>
         <systemColor name="systemBackgroundColor">

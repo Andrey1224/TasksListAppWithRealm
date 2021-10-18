@@ -8,11 +8,6 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
     @IBOutlet weak var myImage: UIImageView!
-    
     @IBOutlet weak var myLabel: UILabel!
-    
-    
-
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33445351A6D948B80935D695 /* Pods_TasksListAppWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848BF2DC9BEF467DB94CEE05 /* Pods_TasksListAppWithRealm.framework */; };
+		CC2AAE3F271CAEB4003ED835 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AAE3E271CAEB4003ED835 /* StorageManager.swift */; };
 		CC59DD082714A69B00CFBC29 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59DD072714A69B00CFBC29 /* TasksModel.swift */; };
 		CC59DD0A2714B93100CFBC29 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59DD092714B93100CFBC29 /* NewTaskViewController.swift */; };
 		CCB035CA2714906C00995805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB035C92714906C00995805 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		848BF2DC9BEF467DB94CEE05 /* Pods_TasksListAppWithRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasksListAppWithRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2AAE3E271CAEB4003ED835 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CC59DD072714A69B00CFBC29 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		CC59DD092714B93100CFBC29 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		CCB035C62714906C00995805 /* TasksListAppWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksListAppWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +56,33 @@
 				DB8D43EE741885847443F58B /* Pods-TasksListAppWithRealm.debug.xcconfig */,
 				EA585FD788BD1B709775EDDA /* Pods-TasksListAppWithRealm.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC59DB22271DCE52008C5AEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCB035CF2714906C00995805 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC59DB23271DCE64008C5AEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC59DD092714B93100CFBC29 /* NewTaskViewController.swift */,
+				CCB035DD2714937700995805 /* MainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC59DB24271DCE7A008C5AEC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC59DD072714A69B00CFBC29 /* TasksModel.swift */,
+				CC2AAE3E271CAEB4003ED835 /* StorageManager.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		CCB035BD2714906C00995805 = {
@@ -79,13 +106,12 @@
 		CCB035C82714906C00995805 /* TasksListAppWithRealm */ = {
 			isa = PBXGroup;
 			children = (
+				CCB035CB2714906C00995805 /* SceneDelegate.swift */,
 				CCB035C92714906C00995805 /* AppDelegate.swift */,
 				CCB035E527149B5200995805 /* CustomTableViewCell.swift */,
-				CC59DD072714A69B00CFBC29 /* TasksModel.swift */,
-				CC59DD092714B93100CFBC29 /* NewTaskViewController.swift */,
-				CCB035DD2714937700995805 /* MainTableViewController.swift */,
-				CCB035CB2714906C00995805 /* SceneDelegate.swift */,
-				CCB035CF2714906C00995805 /* Main.storyboard */,
+				CC59DB24271DCE7A008C5AEC /* DataModel */,
+				CC59DB23271DCE64008C5AEC /* Controllers */,
+				CC59DB22271DCE52008C5AEC /* Views */,
 				CCB035D22714906D00995805 /* Assets.xcassets */,
 				CCB035D42714906D00995805 /* LaunchScreen.storyboard */,
 				CCB035D72714906D00995805 /* Info.plist */,
@@ -219,6 +245,7 @@
 				CCB035CA2714906C00995805 /* AppDelegate.swift in Sources */,
 				CC59DD082714A69B00CFBC29 /* TasksModel.swift in Sources */,
 				CCB035DE2714937700995805 /* MainTableViewController.swift in Sources */,
+				CC2AAE3F271CAEB4003ED835 /* StorageManager.swift in Sources */,
 				CCB035E627149B5200995805 /* CustomTableViewCell.swift in Sources */,
 				CC59DD0A2714B93100CFBC29 /* NewTaskViewController.swift in Sources */,
 				CCB035CC2714906C00995805 /* SceneDelegate.swift in Sources */,
