@@ -69,7 +69,6 @@
                                 <segue destination="zx5-6n-8ta" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="tMk-6Z-ibA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Eed-Fl-j0n"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXR-jn-Ke0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
